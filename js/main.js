@@ -1,7 +1,7 @@
 
 // Init request
 let xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.poznan.pl/featureserver/featureserver.cgi/mpk_przystanki_wgs/", true);
+xhr.open("GET", "http://www.poznan.pl/featureserver/featureserver.cgi/mpk_przystanki_wgs/", true);
 xhr.addEventListener('load', function() {
 
 
