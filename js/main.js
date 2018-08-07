@@ -4,6 +4,7 @@ let xhr = new XMLHttpRequest();
 xhr.open("GET", "https://www.poznan.pl/featureserver/featureserver.cgi/mpk_przystanki_wgs/", true);
 xhr.addEventListener('load', function() {
 
+
     // If request status is OK run the program
     if (this.status === 200) {
 

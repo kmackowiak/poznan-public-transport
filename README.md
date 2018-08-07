@@ -20,7 +20,7 @@ https://rawgit.com/kmackowiak/poznan-public-transport/master/index.html
 
 ### Screenshots
 
-![Screenshot of application](../img/01.png?raw=true)
+![Screenshot of application](img/01.png?raw=true)
 
 
 ## Authors

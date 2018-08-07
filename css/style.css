@@ -4,15 +4,15 @@
 	
 }
 
-#mapid { 
-	height: 100vh; 
-	width: 100%;
-}
-
 .pop {
     text-align: center;
 }
 
 .form-control {
     width: 152px;
+}
+
+#mapid {
+	height: 100vh;
+	width: 100%;
 }
