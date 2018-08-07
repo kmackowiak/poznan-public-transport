@@ -1,7 +1,7 @@
 
 // Init request
 let xhr = new XMLHttpRequest();
-xhr.open("GET", "http://www.poznan.pl/featureserver/featureserver.cgi/mpk_przystanki_wgs/", true);
+xhr.open("GET", "https://www.poznan.pl/featureserver/featureserver.cgi/mpk_przystanki_wgs/", true);
 xhr.addEventListener('load', function() {
 
     // If request status is OK run the program
@@ -10,7 +10,10 @@ xhr.addEventListener('load', function() {
         // Variable declaration
         var map = L.map('mapid').setView([52.40, 16.94], 12.1),
             json = JSON.parse(this.responseText),
-            osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(map),
+            osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {
+                foo: 'bar',
+                attribution: '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+                }).addTo(map),
             markerGroup = L.layerGroup().addTo(map),
             searchSubmit = document.getElementById("searchsubmit"),
             allSubmit = document.getElementById("allsubmit"),
